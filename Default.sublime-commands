@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Google Apps Scripts: Browse projects",
+        "command": "google_apps_scripts"
+    },
+    {
+        "caption": "Google Apps Scripts: Authenticate",
+        "command": "google_apps_scripts_auth"
+    }
+]

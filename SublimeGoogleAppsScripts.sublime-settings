@@ -1,0 +1,17 @@
+{
+    /*
+    * OAUTH identifiers.
+    *   You can use these one as is safely
+    *   Or declare your own app in the cloud console : https://cloud.google.com/console
+    */
+    "oauth_client_id": "1058459624870.apps.googleusercontent.com",
+    "oauth_client_secret": "VDfezc8MADUbEBCZ3Wo_nyV8",
+
+    /* OAUTH credentials storage
+     *   If you dont want to do the oauth process again every 3600 seconds
+     *   set to false to never store credentials
+     *   set a full path starting with / if you want to store it in a special place
+     *   or only a filename, then will be stored in the plugin folder (default)
+    */ 
+    "oauth_credentials_storage": "credentials.json"
+}
