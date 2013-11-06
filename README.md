@@ -4,6 +4,10 @@ Google Apps Scripts offer developers many powerful features like scripting the g
 
 At the moment it only supports ST2 but ST3 will land soon.
 
+Proudly brought to you by the [revolunet][1] team.
+
+FYI, the same kind of plugin exists for Eclipse and its called [Total Eclipse][2].
+
 ## Usage
 
 Just open your palette with `CMD+MAJ+P` then 'Google Apps Scrips : browser projects' to browse and edit your remote scripts :)
@@ -12,9 +16,6 @@ Just open your palette with `CMD+MAJ+P` then 'Google Apps Scrips : browser proje
 
 The plugin uses Google OAuth2 to authenticate yourself and access your projects and scripts with the [scripts Import/Export API][0]. The first time you use the plugin, you'll be asked to provide an OAuth token. It will then be stored (configurable) in the plugin directory.
 
-Proudly brought to you by the [revolunet][1] team.
-
-FYI, the same kind of plugin exists for Eclipse and its called [Total Eclipse][2].
 
 ## Features
 
