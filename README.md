@@ -2,7 +2,7 @@
 
 Google Apps Scripts offer developers many powerful features like scripting the google web applications (Gmail, google docs...) but the online IDE can be quite frustrating. For this reason, i made this small SublimeText 2 plugin to edit your Google Apps Scripts directly from your preferred editor :)
 
-At the moment it only supports ST2 but ST3 will land soon.
+At the moment it only supports ST2 ~~but ST3 will land soon.~~
 
 Proudly brought to you by the [revolunet][1] team.
 
