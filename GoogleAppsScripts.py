@@ -16,7 +16,7 @@ import sublime
 import sublime_plugin
 import ScriptsBrowser
 import SublimeHelper
-import desktop
+#import desktop
 
 # for debug only
 # reload(ScriptsBrowser)
@@ -25,9 +25,9 @@ import desktop
 
 def oauth_ask_token_flow(auth_url, callback):
     ''' present the url to user and an input to paste the oauth token '''
-    #SublimeHelper.message('Open the URL below in your browser then paste the oauth code in the input box at this window bottom : %s' % auth_url)
-    SublimeHelper.message('Authorize access in the opened webpage then paste the oauth code at the bottom of this window')
-    desktop.open(auth_url)
+    SublimeHelper.message('Open the URL below in your browser then paste the oauth code in the input box at this window bottom : %s' % auth_url)
+    #SublimeHelper.message('Authorize access in the opened webpage then paste the oauth code at the bottom of this window')
+    #desktop.open(auth_url)
     def finished(code):
         result = callback(code)
         if not result:
