@@ -47,7 +47,7 @@ def get_GoogleAppsScriptsBrowser():
     settings = sublime.load_settings('SublimeGoogleAppsScripts.sublime-settings')
     storage_file = settings.get('oauth_credentials_storage')
     if storage_file:
-        storage_file = os.path.join(sublime.packages_path(), 'GoogleAppsScripts', storage_file)
+        storage_file = os.path.join(sublime.packages_path(), 'Google Apps Scripts', storage_file)
     browser = ScriptsBrowser.GoogleAppsScriptsBrowser(client_id=settings.get('oauth_client_id'), client_secret=settings.get('oauth_client_secret'), creds_storage=storage_file)
     browser.set_token_flow_callback(oauth_ask_token_flow)
     browser.login()

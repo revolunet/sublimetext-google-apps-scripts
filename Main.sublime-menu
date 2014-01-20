@@ -17,12 +17,12 @@
                         [
                             {
                                 "command": "open_file", 
-                                "args": {"file": "${packages}/GoogleAppsScripts/SublimeGoogleAppsScripts.sublime-settings"},
+                                "args": {"file": "${packages}/Google Apps Scripts/SublimeGoogleAppsScripts.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file", 
-                                "args": {"file": "${packages}/User/GoogleAppsScripts.sublime-settings"},
+                                "args": {"file": "${packages}/User/Google Apps Scripts.sublime-settings"},
                                 "caption": "Settings – User"
                             },
                             { "caption": "-" }
