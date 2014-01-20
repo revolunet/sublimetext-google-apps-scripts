@@ -16,7 +16,6 @@ import sublime
 import sublime_plugin
 import ScriptsBrowser
 import SublimeHelper
-#import desktop
 
 # for debug only
 # reload(ScriptsBrowser)
@@ -25,15 +24,14 @@ import SublimeHelper
 
 def oauth_ask_token_flow(auth_url, callback):
     ''' present the url to user and an input to paste the oauth token '''
-    SublimeHelper.message('Open the URL below in your browser then paste the oauth code in the input box at this window bottom : %s' % auth_url)
-    #SublimeHelper.message('Authorize access in the opened webpage then paste the oauth code at the bottom of this window')
-    #desktop.open(auth_url)
+    SublimeHelper.message('A URL has been copied to your clipboard!  Open a browser window logged in under the Google Apps account that you wish to associate with this plugin, then paste the URL from your clipboard into that browser.  Approve the request and copy the generated token back into the input box below.')
+    sublime.set_clipboard(auth_url)
     def finished(code):
         result = callback(code)
         if not result:
             SublimeHelper.message("invalid OAuth code, try again :/")
         else:
-            SublimeHelper.message("Authentification success. try again please")
+            SublimeHelper.message("Authentification success!  You can now browse and edit your Google Apps Scripts files.")
         return result
     SublimeHelper.show_input("Oauth code : ", "", finished)
 
