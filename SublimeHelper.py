@@ -21,6 +21,7 @@ def write(content, path=None, name=None, encoding='utf-8'):
         handle, path = tempfile.mkstemp()
         if name:
             path2 = os.path.join(os.path.dirname(path), name)
+            os.close(handle)
             os.rename(path, path2)
             path = path2
     with open(path, 'w') as f:
